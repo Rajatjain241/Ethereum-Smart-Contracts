@@ -26,7 +26,6 @@ contract MultiSigWallet {
         uint numConfirmations;
     }
 
-    // mapping from tx index => owner => bool
     mapping(uint => mapping(address => bool)) public isConfirmed;
 
     Transaction[] public transactions;
